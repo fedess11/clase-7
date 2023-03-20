@@ -6,6 +6,7 @@ function agregarPersona() {
     let tipoDocumento = document.getElementById("tipo_documento").value;
     let numeroDocumento = document.getElementById("numero_documento").value;
     let telefono = document.getElementById("telefono").value;
+    let direccion = document.getElementById("direccion").value;
 
     //Agrego a la tabla los datos obtenidos del formulario, pasandole la información a través de variables
     let tabla = document.getElementById("tabla-personas-registradas")
@@ -16,6 +17,7 @@ function agregarPersona() {
     fila.insertCell(3).innerHTML = tipoDocumento;
     fila.insertCell(4).innerHTML = numeroDocumento;
     fila.insertCell(5).innerHTML = telefono;
+    fila.insertCell(6).innerHTML = direccion;
 
     //Apenas abro la web, la tabla será invisible. Luego de agregar el primer elemento, voy a mostrarla por pantalla cambiandole el
     // display (ver CSS para ver por qué no se ve)    
