@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario persona</title>
+    <script type="text/javascript" src="/js/formulario_completo.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/formulario_completo.css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <h1>Formulario persona</h1>
+    <div class="contenedor-flex">
+      <div class="input-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+      <div class="input-form">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" />
+      </div>
+      <div class="input-form">
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+          <option value="">Seleccione</option>
+          <option value="Hombre">Hombre</option>
+          <option value="Mujer">Mujer</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+      <div class="input-form">
+        <label for="tipo_documento">Tipo de documento</label>
+        <select name="tipo_documento" id="tipo_documento">
+          <option value="">Seleccione</option>
+          <option value="DNI">DNI</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="Libreta">Libreta enrolamiento</option>
+        </select>
+      </div>
+      <div class="input-form">
+        <label for="numero_documento">Número documento</label>
+        <input type="number" name="numero_documento" id="numero_documento" />
+      </div>
+      <div class="input-form">
+        <label for="telefono">Número de teléfono</label>
+        <input type="text" name="telefono" id="telefono" />
+      </div>
+    </div>
+
+    <div class="caja-boton">
+      <button type="button" name="button" onclick="agregarPersona()">
+        Cargar datos
+      </button>
+    </div>
+
+    <div class="input-form">
+      <table id="tabla-personas-registradas">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Sexo</th>
+          <th>Tipo documento</th>
+          <th>Número documento</th>
+          <th>Teléfono</th>
+        </tr>
+        <tr></tr>
+      </table>
+    </div>
+  </body>
+</html>

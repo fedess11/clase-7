@@ -1,0 +1,89 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0 10%;
+  background-image: url("/imagenes/bg-palm.jpg");
+  background-size: 100%;
+  background-position: center top;
+}
+
+#tabla-personas-registradas {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  text-align: center;
+}
+
+td {
+  font-size: small;
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-form {
+  display: flex;
+  flex-basis: 33%;
+  flex-direction: column;
+}
+
+input,
+select,
+label {
+  margin: 5px 10px;
+  font-weight: bold;
+}
+
+input,
+select {
+  background-color: rgba(255, 192, 203, 0.35);
+  border-radius: 10px;
+}
+
+.caja-boton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(46, 103, 225, 0.58);
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: rgb(46, 103, 225);
+  font-weight: bold;
+  color: white;
+}
+
+button:active {
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(167, 218, 255, 0.27);
+}
